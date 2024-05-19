@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$color-primary: #007b34;
+$color-prim-background: #fffce5;
+$color-sec-background: #bde9c9;
+$color-secondary: #2ea542;
+$color-heading: #00471f;
+$color-white: #fff;
+$color-shadow: rgba(100, 100, 111, 0.2);
+$color-gray: #343434;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-boxv;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.login__main__container {
+	height: 100vh;
+	background-color: $color-sec-background;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login__card {
+	background-color: $color-white;
+	width: 100rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	box-shadow: $color-shadow 0px 7px 29px 0px;
+}
+
+.login__flex__container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.login__heading {
+	font-family: "Manrope", sans-serif;
+	font-size: 5rem;
+	color: $color-heading;
+	margin-bottom: 2rem;
+	letter-spacing: -1.2px;
+}
+
+.login__form__email,
+.login__form__password {
+	font-family: "Manrope", sans-serif;
+	display: block;
+	height: 4rem;
+	font-size: 1.8rem;
+	width: 30rem;
+	margin-bottom: 1.5rem;
+	border: none;
+	border-bottom: 1px solid $color-heading;
+	padding-top: 1.2rem;
+}
+
+.login__form__password {
+	margin-bottom: 3rem;
+}
+
+.login__form__email:focus,
+.login__form__password:focus {
+	outline: none;
+}
+
+.login__img {
+	width: 50%;
+	height: auto;
+	flex-shrink: 0;
+}
+
+.login__text {
+	font-family: "Manrope", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.login__button {
+	font-family: "Manrope", sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	background-color: $color-secondary;
+	color: $color-white;
+	border: none;
+	border-radius: 40px;
+	padding: 0.5rem 2rem;
+	cursor: pointer;
+	transition: all 0.2s;
+	margin-bottom: 2rem;
+}
+
+.login__button:hover {
+	background-color: $color-heading;
+}
+
+.login__signup__link,
+.login__signup__link:visited,
+.login__signup__link:active {
+	text-decoration: none;
+	color: $color-primary;
+}
+
+.signup__main__container {
+	height: 100vh;
+	background-color: $color-sec-background;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.signup__card {
+	background-color: #fff;
+	width: 100rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	box-shadow: $color-shadow 0px 7px 29px 0px;
+}
+
+.signup__flex__container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.signup__heading {
+	font-family: "Manrope", sans-serif;
+	color: $color-heading;
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+	letter-spacing: -1.2px;
+}
+
+.signup__form__email,
+.signup__form__password {
+	font-family: "Manrope", sans-serif;
+	display: block;
+	height: 4rem;
+	font-size: 1.8rem;
+	width: 30rem;
+	margin-bottom: 1.5rem;
+	border: none;
+	border-bottom: 1px solid $color-heading;
+	padding-top: 1.2rem;
+}
+
+.signup__form__password {
+	margin-bottom: 3rem;
+}
+
+.signup__form__email:focus,
+.signup__form__password:focus {
+	outline: none;
+}
+
+.signup__img {
+	width: 50%;
+	height: auto;
+	flex-shrink: 0;
+}
+
+.signup__text {
+	font-family: "Manrope", sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.signup__button {
+	font-family: "Manrope", sans-serif;
+	/* font-family: "Poppins", sans-serif; */
+	font-size: 1.8rem;
+	background-color: $color-secondary;
+	color: #fff;
+	border: none;
+	border-radius: 40px;
+	padding: 0.5rem 2rem;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.signup__button:hover {
+	background-color: $color-heading;
+}
+
+.signup__login__link,
+.signup__login__link:visited,
+.signup__login__link:active {
+	text-decoration: none;
+	color: $color-primary;
+}
