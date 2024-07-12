@@ -9,26 +9,30 @@ import "./index.scss";
 import Signup from "./Components/Signup";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Login />,
-	},
-	{
-		path: "/signup",
-		element: <Signup />,
-	},
-	{
-		path: "/main",
-		element: <App />,
-	},
+  {
+    path: "/",
+    element: <Login />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+  {
+    path: "/main",
+    element: <App />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	<React.StrictMode>
-		<GlobalStyle />
-		<GlobalProvider>
-			<RouterProvider router={router} />
-		</GlobalProvider>
-	</React.StrictMode>
+  <React.StrictMode>
+    <GlobalStyle />
+    <GlobalProvider>
+      <RouterProvider router={router} />
+    </GlobalProvider>
+  </React.StrictMode>
 );
